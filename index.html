@@ -4,16 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>copyproject1</title>
   <style>
+    /* for font family */
     @import url('https://fonts.googleapis.com/css2?family=Inter');
-
+    /* for flex property */
+    .forflex {
+      display: flex;
+      align-items: center;
+      align-self: center;
+    }
+/* **********for all***** */
     body {
       box-sizing: border-box;
       position: absolute;
@@ -24,11 +26,16 @@
       font-family: 'Inter', sans-serif;
       font-weight: 0;
     }
-
-    .forflex {
-      display: flex;
-      align-items: center;
-      align-self: center;
+    /* **********left-side_component****** */
+    .ldiv {
+      text-align: left;
+      width: 50%;
+      background-color: hsl(244, 38%, 16%);
+      height: 450px;
+    }
+/* for text component */
+    .lines{
+      margin: 0px 91px;
     }
 
     .line1 {
@@ -37,40 +44,33 @@
       font-size: 30px;
       margin-bottom: 30px;
     }
-    .lines{
-      margin: 0px 91px;
-    }
-     .r{
-      border:5px solid red;
-    } 
-    .ldiv {
-      text-align: left;
-      width: 50%;
-      background-color: hsl(244, 38%, 16%);
-      height: 450px;
-    }
-
-    .rdiv {
-      width: 50%;
-    }
-    .l32{
-      color:hsla(0, 0%, 100%, 0.6);
-    }
     .line2{
       color:hsla(0, 0%, 100%, 0.75);
     }
-
     .line3 {
       margin-top:80px;
       justify-content:space-between;
     }
-
     .l31 {
       color:hsl(0, 0%, 100%);
       font-family: 'Inter', sans-serif;
       font-weight: 400;
       font-size: 20px;
     }
+    .l32{
+      color:hsla(0, 0%, 100%, 0.6);
+    }
+
+    .rdiv {
+      width: 50%;
+      position: relative;
+    }
+    .rdiv::after{
+      position: absolute; content: ''; display: block; top: 0; left: 0 ;height: 100%;width: 100%;
+    background: rgba(101, 2, 255, 0.4);
+    mix-blend-mode: multiply
+    }
+
   </style>
 </head>
 
@@ -83,7 +83,7 @@
           experience, and overall efficiency.</div>
         <div class="forflex line3">
           <div class="line31">
-            <div class="l31">10k+ </div>
+            <div class="l31">10K+ </div>
             <div class="l32"> companies</div>
           </div>
           <div class="lin32">
@@ -91,7 +91,7 @@
             <div class="l32">templates</div>
           </div>
           <div class="33">
-            <div class="l31">12m+ </div>
+            <div class="l31">12M+ </div>
             <div class="l32"> queries</div>
           </div>
         </div>
