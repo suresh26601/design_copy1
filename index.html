@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter');
+
+    body {
+      box-sizing: border-box;
+      position: absolute;
+      margin: 0;
+      padding: 0px 127px;
+      background-color: hsl(233, 47%, 7%);
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      font-weight: 0;
+    }
+
+    .forflex {
+      display: flex;
+      align-items: center;
+      align-self: center;
+    }
+
+    .line1 {
+      color: hsl(0, 0%, 100%);
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .lines{
+      margin: 0px 91px;
+    }
+     .r{
+      border:5px solid red;
+    } 
+    .ldiv {
+      text-align: left;
+      width: 50%;
+      background-color: hsl(244, 38%, 16%);
+      height: 450px;
+    }
+
+    .rdiv {
+      width: 50%;
+    }
+    .l32{
+      color:hsla(0, 0%, 100%, 0.6);
+    }
+    .line2{
+      color:hsla(0, 0%, 100%, 0.75);
+    }
+
+    .line3 {
+      margin-top:80px;
+      justify-content:space-between;
+    }
+
+    .l31 {
+      color:hsl(0, 0%, 100%);
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body class="forflex">
+  <div class="forflex  mdiv">
+    <div class=" forflex ldiv ">
+      <div class=" lines">
+        <div class="line1">Get <span style="color: hsl(277, 64%, 61%);"> insights </span>that help your business grow.</div>
+        <div class="line2">Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.</div>
+        <div class="forflex line3">
+          <div class="line31">
+            <div class="l31">10k+ </div>
+            <div class="l32"> companies</div>
+          </div>
+          <div class="lin32">
+            <div class="l31">314 </div>
+            <div class="l32">templates</div>
+          </div>
+          <div class="33">
+            <div class="l31">12m+ </div>
+            <div class="l32"> queries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" rdiv">
+      <img src="./images/image-header-desktop.jpg" alt="">
+    </div>
+
+  </div>
+</body>
+
+</html>
